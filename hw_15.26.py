@@ -47,8 +47,6 @@ class Calculator:
 
     def square_root(self, num):
         try:
-            if num < 0:
-                return "Error: Square root of negative number is not defined"
             result = num ** 0.5
             return result
         except Exception as e:
@@ -63,4 +61,4 @@ print("Subtraction:", calculator.sub(5, None))
 print("Multiplication:", calculator.multiply(5, {1:3, 3:4}))
 print("Division:", calculator.divide(5, 0))
 print("Exponentiation:", calculator.exponentiate(2, -1))
-print("Square Root:", calculator.square_root(-9))
+print("Square Root:", calculator.square_root("d"))
